@@ -1,21 +1,137 @@
-<!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Martinn</title>
-    <link rel="stylesheet" href="second.css">
-    <img src="black-reaper-kaneki.gif" alt="pfp" class="center">    
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="assets/js/plugins/three.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+                return false;
+            });
+            document.addEventListener('selectstart', function(event) {
+                event.preventDefault();
+                return false;
+            });
+            const enterCover = document.getElementById('enter-cover');
+            enterCover.addEventListener('click', function(event) {
+                event.preventDefault();
+                setTimeout(function() {
+                    enterCover.remove();
+                    var video = document.getElementById('video');
+                    video.play();
+                    video.volume = 0.15;
+                    return false;
+                }, 410);
+                enterCover.animate([{
+                    opacity: 1
+                }, {
+                    opacity: 0
+                }], {
+                    duration: 400,
+                    iterations: 1,
+                    easing: 'ease-in-out'
+                });
+                return false;
+            });
+        });
+    </script>
+    <style>
+        @keyframes fadeOut {
+            from {
+                opacity: 1
+            }
+            to {
+                opacity: 0
+            }
+        }
+    </style>
 </head>
-<body text="white">
-    <h1 align="center" style="color:white" text>Martinn</h1>
-    <table style="width:100%" class="table">
-        <tr>
-          <th><a href="https://open.spotify.com/user/dqts3q1sl5pqk1vpwneln2619?si=0abee3770b8f4df3Q">Spotify</a></th>
-          <th><a href="https://www.youtube.com/channel/UC7oSltcBn59Hkg7HCFUj_dQ">YouTube</a></th>
-          <th><a href="https://steamcommunity.com/id/justwmartin/">Steam</a></th>
-          <th><a href="https://discordlookup.com/user/958039179445555280">Discord</a></th>
-        </tr>
+
+<body>
+    <div id="enter-cover" style="width:100vw;height:100vh;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#1d1d1d;z-index:999999">
+        <div style="position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-style:italic;font-size:larger">
+            click to enter
+        </div>
+    </div>
+    <div id="main">
+        <section id="hero" class="hero hero-1" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="rainbowline"></div>
+            <div class="front-content page-enter-animated show">
+                <audio loop="" preload="auto" id="audio">
+<source src="SnapSave.io-Bruno x Spacc - AHA-AHA (OFFICIAL MUSIC VIDEO)-(1080p).mp4" type="audio/mp3">
+</audio>
+                <video loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+<source src="SnapSave.io-Bruno x Spacc - AHA-AHA (OFFICIAL MUSIC VIDEO)-(1080p).mp4" type="video/mp4">
+</video>
+                <input type="checkbox" autocomplete="off" id="overlay-toggle">
+                <input type="checkbox" autocomplete="off" id="overlay-toggle">
+                <div class="container-mid">
+                    <div class="cycle-wrapper">
+                        <div id="cycle" style="position: relative; height: 62px;">
+                            <div class="slide cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; opacity: 1; display: block; visibility: visible;">
+                                <h1 class="title">Martinn</h1>
+                            </div>
+                        </div>
+                        <div class="cycle-wrapper">
+                            <div id="cycle">
+                                <br>
+                                <br>
+                                <a target="_blank" href="https://steamcommunity.com/id/justwmartin/">🔥</a><br>
+                                <a style="color:white;">background song:</a><br>
+                                <a class="song" target="_blank" href="https://www.youtube.com/watch?v=dt46X_zgOJw">
+Bruno X Spacc - AHA-AHA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="social" class="content cycle-wrapper">
+                        <ul class="social-icons">
+                            <li>
+                                <a data-placement="bottom" title="" style="border-radius:13px;" class="fab fa-steam" target="_blank" href="https://steamcommunity.com/id/justwmartin/" data-original-title="Steam">
+                                    <div class="overlay"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="bottom" title="" style="color:#1f6698;border-radius:13px;" class="fab fa-discord" href="https://discordlookup.com/user/958039179445555280" target="_blank" data-original-title="Discord">
+                                    <div class="overlay"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="bottom" title="" style="color:#e95950;border-radius:13px;" class="fab fa-instagram" target="_blank" href="https://www.instagram.com/martiinn9001/" data-original-title="Instagram">
+                                    <div class="overlay"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="bottom" title="" style="color:#f70202;border-radius:13px;" class="fab fa-youtube" target="_blank" href="https://www.youtube.com/channel/UC7oSltcBn59Hkg7HCFUj_dQ" data-original-title="Youtube">
+                                    <div class="overlay"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="bottom" title="" style="color:#2ce716;border-radius:13px;" class="fab fa-spotify" target="_blank" href="https://open.spotify.com/user/dqts3q1sl5pqk1vpwneln2619?si=afa97432b29442e4" data-original-title="Spotify">
+                                    <div class="overlay"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="background-content page-enter-animated show">
+        </section>
+        </div>
+
+        <script type="text/javascript" src="assets/js/plugins/plugins.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script type="text/javascript">
+            src = "BFD9Chg2Nmw"
+        </script>
 </body>
+
 </html>
